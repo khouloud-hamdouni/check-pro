@@ -1,0 +1,30 @@
+ALGORITHM dot-product
+VAR
+    i:INTEGER;
+    vect_1,vect_2:FLOAT;
+    ps:FLOAT;
+    n:INTEGER;
+    
+BEGIN
+    dot_product(vect_1,vect_2,n);
+     ps:=0;
+      FOR (i=0;i<n;i++)
+      {
+        
+        ps:=ps+vect_1[i]*vect_2[i]
+        
+        write("le produit scalaire des vecteurs vect_1 et vect_2 est : " ,Ps)
+      END_FOR
+    }
+    dot_product(ps);
+    FOR (i=0;i<n;i++)
+    {
+        IF (ps=0) THEN
+            write('vect_1 et vect_2 sont orthogonaux')
+        ELSE
+            write('vect_1 et vect_2 ne sont pas orthogonaux')
+        END_IF
+    END_FOR
+    }
+      
+END
